@@ -36,6 +36,15 @@
     <ClCompile Include="LightArtillery.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Rifleman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grenadier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Machinegunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlliedTroops.h">
@@ -54,6 +63,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LightArtillery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rifleman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grenadier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Machinegunner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
