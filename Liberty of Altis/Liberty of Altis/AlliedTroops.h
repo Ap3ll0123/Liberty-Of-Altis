@@ -12,14 +12,13 @@ protected:
 public:
 
 	//Default
-	AlliedTroops(void);
+	AlliedTroops(Entity& other);
 
 	//Override, from entity
-	void Movement(char direction);
+	void Movement(char direction, Entity& other);
 
 	//Override, from entity
-	void Attacking(void);
+	void Attacking(Entity& other);
 
 	bool collisioncheck(Entity& other);
 };
-
