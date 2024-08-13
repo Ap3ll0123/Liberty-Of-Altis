@@ -22,3 +22,31 @@ int Entity::GetY(void)
 {
     return PosXY.GetY();
 }
+
+int Entity::hpgetter()
+{
+    return Health;
+}
+
+int Entity::attackgetter()
+{
+    return Attack;
+}
+
+int Entity::rangegetter()
+{
+    return Range;
+}
+
+void Entity::Forestrange(bool a)
+{
+    //for forest range (dont call if theres no forest range
+    if (a == true) {
+        Range = Range / 2;
+    }
+}
+
+int Entity::costgetter()
+{
+    return Cost;
+}
