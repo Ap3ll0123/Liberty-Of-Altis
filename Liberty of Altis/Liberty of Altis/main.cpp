@@ -15,7 +15,6 @@ int main()
     test.drawmap();   // Call the drawmap method
 
     return 0;
-}
 
 	AlliedTroops Player;
 
@@ -25,3 +24,4 @@ int main()
 		std::cin >> input;
 		Player.Movement(input);
 	}
+}
