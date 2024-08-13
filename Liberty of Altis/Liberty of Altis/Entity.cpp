@@ -12,3 +12,13 @@ bool Entity::isEntityAlive(void)
     return true;
 
 }
+
+int Entity::GetX(void)
+{
+    return PosXY.GetX();
+}
+
+int Entity::GetY(void)
+{
+    return PosXY.GetY();
+}

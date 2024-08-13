@@ -30,5 +30,12 @@ public:
 
 	//Attack function, carries out attack (pure virtual function)
 	virtual void Attacking(void) = 0;
+
+	//Get X position 
+	int GetX(void);
+
+	//Get Y position 
+	int GetY(void);
+
 };
 

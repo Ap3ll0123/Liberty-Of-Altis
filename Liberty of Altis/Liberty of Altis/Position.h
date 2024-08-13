@@ -7,6 +7,8 @@ private:
 	int x;
 	int y; 
 
-//getters and setters
+	//getters 
+	int GetX(void);
+	int GetY(void);
 };
 
