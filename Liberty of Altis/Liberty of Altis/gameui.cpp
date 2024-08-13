@@ -15,7 +15,7 @@ void gameui::cutscene1()
 	Sleep(3000);
 	std::cout << "One day, a suppression mission by government forces leads to a village in the island's interior being destroyed\n";
 	Sleep(3000);
-	std::cout << "Only one person survived, he was Johan Heisenburg. Angered, he has vowed to punish the government and intends to do so by fighting with a militia.....";
+	std::cout << "Only one person survived, he was Johan Heisenburg. Angered, he has vowed to punish the government and intends to do so by fighting with a militia.....\n";
 }
 
 
