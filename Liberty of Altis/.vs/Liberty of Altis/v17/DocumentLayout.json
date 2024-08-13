@@ -1,10 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\blueb\\OneDrive\\Desktop\\School\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\",
+  "WorkspaceRootPath": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10E101E2-82DF-4D68-8BEA-999D5C75D1F0}|Liberty of Altis\\Liberty of Altis.vcxproj|C:\\Users\\blueb\\OneDrive\\Desktop\\School\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\environmentalObjs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\environmentalObjs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\environmentalObjs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\environmentalObjs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10E101E2-82DF-4D68-8BEA-999D5C75D1F0}|Liberty of Altis\\Liberty of Altis.vcxproj|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{10E101E2-82DF-4D68-8BEA-999D5C75D1F0}|Liberty of Altis\\Liberty of Altis.vcxproj|solutionrelative:Liberty of Altis\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\mapmain1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\Liberty of Altis.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Liberty of Altis\\Liberty of Altis.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,15 +70,186 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mapmain5.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain5.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain5.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain5.h",
+              "RelativeToolTip": "Liberty of Altis\\mapmain5.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:27.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mapmain5.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain5.cpp",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain5.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain5.cpp",
+              "RelativeToolTip": "Liberty of Altis\\mapmain5.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-13T01:58:27.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mapmain4.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain4.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain4.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain4.h",
+              "RelativeToolTip": "Liberty of Altis\\mapmain4.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:27.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "mapmain4.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain4.cpp",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain4.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain4.cpp",
+              "RelativeToolTip": "Liberty of Altis\\mapmain4.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-13T01:58:27.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "mapmain3.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain3.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain3.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain3.h",
+              "RelativeToolTip": "Liberty of Altis\\mapmain3.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:26.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "mapmain3.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain3.cpp",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain3.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain3.cpp",
+              "RelativeToolTip": "Liberty of Altis\\mapmain3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-13T01:58:26.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "mapmain2.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain2.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain2.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain2.h",
+              "RelativeToolTip": "Liberty of Altis\\mapmain2.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:26.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "mapmain2.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain2.cpp",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain2.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain2.cpp",
+              "RelativeToolTip": "Liberty of Altis\\mapmain2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-13T01:58:26.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "mapmain1.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain1.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain1.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain1.h",
+              "RelativeToolTip": "Liberty of Altis\\mapmain1.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:26.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "mapmain1.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain1.cpp",
+              "RelativeDocumentMoniker": "Liberty of Altis\\mapmain1.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\mapmain1.cpp",
+              "RelativeToolTip": "Liberty of Altis\\mapmain1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-13T01:58:26.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "map.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\map.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\map.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\map.h",
+              "RelativeToolTip": "Liberty of Altis\\map.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:26.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Liberty of Altis.vcxproj.user",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\Liberty of Altis.vcxproj.user",
+              "RelativeDocumentMoniker": "Liberty of Altis\\Liberty of Altis.vcxproj.user",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\Liberty of Altis.vcxproj.user",
+              "RelativeToolTip": "Liberty of Altis\\Liberty of Altis.vcxproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-08-13T01:58:26.002Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "environmentalObjs.h",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\environmentalObjs.h",
+              "RelativeDocumentMoniker": "Liberty of Altis\\environmentalObjs.h",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\environmentalObjs.h",
+              "RelativeToolTip": "Liberty of Altis\\environmentalObjs.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-13T01:58:23.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "environmentalObjs.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\environmentalObjs.cpp",
+              "RelativeDocumentMoniker": "Liberty of Altis\\environmentalObjs.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\environmentalObjs.cpp",
+              "RelativeToolTip": "Liberty of Altis\\environmentalObjs.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-13T01:58:23.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Desktop\\School\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\main.cpp",
               "RelativeDocumentMoniker": "Liberty of Altis\\main.cpp",
-              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Desktop\\School\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\main.cpp",
+              "ToolTip": "C:\\Users\\blueb\\OneDrive\\Documents\\GitHub\\Liberty-Of-Altis\\Liberty of Altis\\Liberty of Altis\\main.cpp",
               "RelativeToolTip": "Liberty of Altis\\main.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
