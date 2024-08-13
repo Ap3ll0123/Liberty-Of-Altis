@@ -20,9 +20,7 @@ protected:
 
 	//Cost, amount of inventory space it takes up
 	int Cost;
-	
-	//Overloaded constructor, for child to use 
-	Entity(int hp, int atk, int range, int cost);
+
 
 public:
 
@@ -33,10 +31,10 @@ public:
 	bool isEntityAlive(void);
 
 	//Movement function, carries out movement (pure virtual function)
-	virtual void Movement(void);
+	virtual void Movement(char direction) = 0;
 
 	//Attack function, carries out attack (pure virtual function)
-	virtual void Attacking(void);
+	virtual void Attacking(void) = 0;
 
 	//Get X position 
 	int GetX(void);

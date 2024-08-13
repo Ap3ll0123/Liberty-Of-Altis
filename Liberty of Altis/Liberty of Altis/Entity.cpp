@@ -9,13 +9,6 @@ Entity::Entity(void)
     Cost = 0;
 }
 
-Entity::Entity(int hp, int atk, int range, int cost) {
-    Health = hp;
-    Attack = atk;
-    Range = range;
-    Cost = cost;
-}
-
 bool Entity::isEntityAlive(void)
 {
     //check if health below zero 
@@ -26,16 +19,6 @@ bool Entity::isEntityAlive(void)
     //if alive return true
     return true;
 
-}
-
-void Entity::Movement(void)
-{
-    std::cout << "Move";
-}
-
-void Entity::Attacking(void)
-{
-    std::cout << "Atk";
 }
 
 int Entity::GetX(void)

@@ -4,21 +4,21 @@
 class AlliedTroops : public Entity
 {
 
-protected:
-	//For Allied, put in protected so u cant do this in main 
-	AlliedTroops(int hp, int atk, int range, int cost);
-
 
 public:
 
 	//Default
-	AlliedTroops(Entity& other);
+	AlliedTroops(void);
+
+	//For Allied, put in protected so u cant do this in main 
+	AlliedTroops(int hp, int atk, int range, int cost);
 
 	//Override, from entity
-	void Movement(char direction, Entity& other);
+	void Movement(char direction) override;
 
 	//Override, from entity
-	void Attacking(Entity& other);
+	void Attacking(void) override;
 
 	bool collisioncheck(Entity& other);
 };
+

@@ -1,7 +1,7 @@
 #include "AlliedTroops.h"
 #include <iostream>
 
-AlliedTroops::AlliedTroops(int hp, int atk, int range, int cost) : Entity(hp, atk, range, cost)
+AlliedTroops::AlliedTroops(int hp, int atk, int range, int cost)
 {
 	Health = hp;
 	Attack = atk;
@@ -9,21 +9,21 @@ AlliedTroops::AlliedTroops(int hp, int atk, int range, int cost) : Entity(hp, at
 	Cost = cost;
 }
 
-AlliedTroops::AlliedTroops(Entity& other)
+AlliedTroops::AlliedTroops(void)
 {
-	//Pause
+	//Pause Health
+	Health = 0;
+	Attack = 0;
+	Range = 0;
+	Cost = 0;
 }
 
-void AlliedTroops::Movement(char direction, Entity& other)
+void AlliedTroops::Movement(char direction)
 {
 	char dirinput = toupper(direction);
 
 	if (dirinput == 'W') {
 		if (GetY() == 0) {
-			SetY(GetY());
-			std::cout << GetY() << std::endl;
-		}
-		else if (collisioncheck(other) == true) {
 			SetY(GetY());
 			std::cout << GetY() << std::endl;
 		}
@@ -37,10 +37,6 @@ void AlliedTroops::Movement(char direction, Entity& other)
 			SetY(GetY());
 			std::cout << GetY() << std::endl;
 		}
-		else if (collisioncheck(other) == true) {
-			SetY(GetY());
-			std::cout << GetY() << std::endl;
-		}
 		else {
 			SetY(GetY() + 1);
 			std::cout << GetY() << std::endl;
@@ -51,21 +47,13 @@ void AlliedTroops::Movement(char direction, Entity& other)
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
-		else if (collisioncheck(other) == true) {
-			SetX(GetX());
-			std::cout << GetX() << std::endl;
-		}
 		else {
 			SetX(GetX() - 1);
 			std::cout << GetX() << std::endl;
 		}
 	}
 	else if (dirinput == 'D') {
-		if (GetX() == 24) {
-			SetX(GetX());
-			std::cout << GetX() << std::endl;
-		}
-		else if (collisioncheck(other) == true) {
+		if (GetX() == 50) {
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
@@ -74,12 +62,11 @@ void AlliedTroops::Movement(char direction, Entity& other)
 			std::cout << GetX() << std::endl;
 		}
 	}
-
+	std::cout << "ALlyMOve";
 }
 
-void AlliedTroops::Attacking(Entity& other)
+void AlliedTroops::Attacking()
 {
-	
 	std::cout << "Attack Alliedtroop";
 }
 
