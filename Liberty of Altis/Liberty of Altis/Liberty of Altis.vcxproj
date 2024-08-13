@@ -128,15 +128,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AlliedTroops.cpp" />
+    <ClCompile Include="Artillery.cpp" />
     <ClCompile Include="EnemyTroops.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="LightArtillery.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tank.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlliedTroops.h" />
+    <ClInclude Include="Artillery.h" />
     <ClInclude Include="EnemyTroops.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="LightArtillery.h" />
     <ClInclude Include="Tank.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

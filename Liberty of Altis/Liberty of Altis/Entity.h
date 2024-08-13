@@ -37,5 +37,20 @@ public:
 	//Get Y position 
 	int GetY(void);
 
+	//hpgetter
+	int hpgetter();
+
+	//attack getter
+	int attackgetter();
+
+	//range getter
+	int rangegetter();
+
+	//range setter
+	void Forestrange(bool a);
+
+	//cost getter
+	int costgetter();
+
 };
 
