@@ -9,17 +9,21 @@ AlliedTroops::AlliedTroops(int hp, int atk, int range, int cost) : Entity(hp, at
 	Cost = cost;
 }
 
-AlliedTroops::AlliedTroops(void)
+AlliedTroops::AlliedTroops(Entity& other)
 {
 	//Pause
 }
 
-void AlliedTroops::Movement(char direction)
+void AlliedTroops::Movement(char direction, Entity& other)
 {
 	char dirinput = toupper(direction);
 
 	if (dirinput == 'W') {
 		if (GetY() == 0) {
+			SetY(GetY());
+			std::cout << GetY() << std::endl;
+		}
+		else if (collisioncheck(other) == true) {
 			SetY(GetY());
 			std::cout << GetY() << std::endl;
 		}
@@ -33,6 +37,10 @@ void AlliedTroops::Movement(char direction)
 			SetY(GetY());
 			std::cout << GetY() << std::endl;
 		}
+		else if (collisioncheck(other) == true) {
+			SetY(GetY());
+			std::cout << GetY() << std::endl;
+		}
 		else {
 			SetY(GetY() + 1);
 			std::cout << GetY() << std::endl;
@@ -43,13 +51,21 @@ void AlliedTroops::Movement(char direction)
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
+		else if (collisioncheck(other) == true) {
+			SetX(GetX());
+			std::cout << GetX() << std::endl;
+		}
 		else {
 			SetX(GetX() - 1);
 			std::cout << GetX() << std::endl;
 		}
 	}
 	else if (dirinput == 'D') {
-		if (GetX() == 50) {
+		if (GetX() == 24) {
+			SetX(GetX());
+			std::cout << GetX() << std::endl;
+		}
+		else if (collisioncheck(other) == true) {
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
@@ -61,8 +77,9 @@ void AlliedTroops::Movement(char direction)
 
 }
 
-void AlliedTroops::Attacking()
+void AlliedTroops::Attacking(Entity& other)
 {
+	
 	std::cout << "Attack Alliedtroop";
 }
 
