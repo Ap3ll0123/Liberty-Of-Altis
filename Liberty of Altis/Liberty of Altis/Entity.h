@@ -52,5 +52,8 @@ public:
 	//cost getter
 	int costgetter();
 
+	void SetX(int xpos);
+	void SetY(int ypos);
+
 };
 
