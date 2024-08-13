@@ -10,4 +10,5 @@ bool Entity::isEntityAlive(void)
     }
     //if alive return true
     return true;
+
 }

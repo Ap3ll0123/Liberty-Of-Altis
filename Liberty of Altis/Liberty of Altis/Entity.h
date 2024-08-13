@@ -1,5 +1,6 @@
 #pragma once
 #include "Position.h"
+#include <iostream>
 
 class Entity
 {
@@ -24,7 +25,10 @@ public:
 	//Check if entity is alive
 	bool isEntityAlive(void);
 
-	//Movement function, checks if movement is valid (pure virtual function)
-	virtual bool Movement(void) = 0;
+	//Movement function, carries out movement (pure virtual function)
+	virtual void Movement(void) = 0;
+
+	//Attack function, carries out attack (pure virtual function)
+	virtual void Attacking(void) = 0;
 };
 
