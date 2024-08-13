@@ -4,20 +4,14 @@
 
 class Rifleman : public AlliedTroops, public EnemyTroops
 {
-private:
-	//total amount of health
-	int Health;
-
-	//total amount of damage
-	int Attack;
-
-	//amount of range
-	int Range;
-
-	//the cost in backpack
-	int Cost;
-
 public:
-	//constructor
-	Rifleman();
+	//Default constructor
+	Rifleman(void);
+
+	//Overloaded, which will pass into allied troop constructor and then entity constructor 
+	Rifleman(int hp, int atk, int range, int cost);
+
+	//Overloaded, which will pass into enemy troop constructor and then entity constructor 
+	Rifleman(int hp, int atk, int range, int cost, bool isEnemy);
+
 };
