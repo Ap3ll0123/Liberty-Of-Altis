@@ -1,12 +1,13 @@
-#include "AlliedTroops.h"
-#include <iostream>
 
-void AlliedTroops::Movement(char direction)
-{
+
 	char dirinput = toupper(direction);
 
 	if (dirinput == 'W') {
 		if (GetY() == 0) {
+			SetY(GetY());
+			std::cout << GetY() << std::endl;
+		}
+		else if (AlliedTroops::collisioncheck(other) == true) {
 			SetY(GetY());
 			std::cout << GetY() << std::endl;
 		}
@@ -20,6 +21,10 @@ void AlliedTroops::Movement(char direction)
 			SetY(GetY());
 			std::cout << GetY() << std::endl;
 		}
+		else if (AlliedTroops::collisioncheck(other) == true) {
+			SetY(GetY());
+			std::cout << GetY() << std::endl;
+		}
 		else {
 			SetY(GetY() + 1);
 			std::cout << GetY() << std::endl;
@@ -30,13 +35,21 @@ void AlliedTroops::Movement(char direction)
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
+		else if (AlliedTroops::collisioncheck(other) == true) {
+			SetX(GetX());
+			std::cout << GetX() << std::endl;
+		}
 		else {
 			SetX(GetX() - 1);
 			std::cout << GetX() << std::endl;
 		}
 	}
 	else if (dirinput == 'D') {
-		if (GetX() == 24) {
+		if (GetX() == 33) {
+			SetX(GetX());
+			std::cout << GetX() << std::endl;
+		}
+		else if (AlliedTroops::collisioncheck(other) == true) {
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
@@ -48,9 +61,20 @@ void AlliedTroops::Movement(char direction)
 
 }
 
-void AlliedTroops::Attacking()
+bool AlliedTroops::Attacking(int range, Entity& other)
 {
-
+	char input;
+	input = toupper(input);
+	//Return true if can attack
+	int distance = GetX() - other.GetX();
+	if (abs(distance) == range) {
+		std::cout << "Attack Successful";
+		return true;
+	}
+	else {
+		std::cout << "Cant attack";
+		return false;
+	}
 }
 
 bool AlliedTroops::collisioncheck(Entity& other)
