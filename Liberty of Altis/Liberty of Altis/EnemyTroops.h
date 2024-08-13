@@ -2,8 +2,17 @@
 #include "Entity.h"
 class EnemyTroops : public Entity
 {
-//for Ai behavioural attacking and movement
+
+protected:
+
+	//Override to pass into the entity constructor 
+	EnemyTroops(int hp, int atk, int range, int cost);
+
 public:
+	//Default 
+	EnemyTroops(void);
+
+	//for Ai behavioural attacking and movement
 	void Movement();
 	void Attacking();
 

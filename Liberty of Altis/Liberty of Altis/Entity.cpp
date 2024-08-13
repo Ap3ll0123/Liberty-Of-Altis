@@ -1,6 +1,21 @@
 #include "Entity.h"
 
 
+Entity::Entity(void)
+{
+    Health = 0;
+    Attack = 0;
+    Range = 0;
+    Cost = 0;
+}
+
+Entity::Entity(int hp, int atk, int range, int cost) {
+    Health = hp;
+    Attack = atk;
+    Range = range;
+    Cost = cost;
+}
+
 bool Entity::isEntityAlive(void)
 {
     //check if health below zero 
@@ -13,6 +28,16 @@ bool Entity::isEntityAlive(void)
 
 }
 
+void Entity::Movement(void)
+{
+    std::cout << "Move";
+}
+
+void Entity::Attacking(void)
+{
+    std::cout << "Atk";
+}
+
 int Entity::GetX(void)
 {
     return PosXY.GetX();
@@ -23,30 +48,22 @@ int Entity::GetY(void)
     return PosXY.GetY();
 }
 
-int Entity::hpgetter()
+int Entity::GetHealth(void)
 {
     return Health;
 }
 
-int Entity::attackgetter()
+int Entity::GetAttack(void)
 {
     return Attack;
 }
 
-int Entity::rangegetter()
+int Entity::GetRange(void)
 {
     return Range;
 }
 
-void Entity::Forestrange(bool a)
-{
-    //for forest range (dont call if theres no forest range
-    if (a == true) {
-        Range = Range / 2;
-    }
-}
-
-int Entity::costgetter()
+int Entity::GetCost(void)
 {
     return Cost;
 }

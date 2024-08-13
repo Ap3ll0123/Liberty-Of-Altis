@@ -5,7 +5,7 @@
 class Entity
 {
 
-private:
+protected:
 	//Composition relationship 
 	Position PosXY;
 
@@ -20,16 +20,23 @@ private:
 
 	//Cost, amount of inventory space it takes up
 	int Cost;
+	
+	//Overloaded constructor, for child to use 
+	Entity(int hp, int atk, int range, int cost);
 
 public:
+
+	//Default
+	Entity(void);
+
 	//Check if entity is alive
 	bool isEntityAlive(void);
 
 	//Movement function, carries out movement (pure virtual function)
-	virtual void Movement(void) = 0;
+	virtual void Movement(void);
 
 	//Attack function, carries out attack (pure virtual function)
-	virtual void Attacking(void) = 0;
+	virtual void Attacking(void);
 
 	//Get X position 
 	int GetX(void);
@@ -38,19 +45,16 @@ public:
 	int GetY(void);
 
 	//hpgetter
-	int hpgetter();
+	int GetHealth(void);
 
 	//attack getter
-	int attackgetter();
+	int GetAttack(void);
 
 	//range getter
-	int rangegetter();
-
-	//range setter
-	void Forestrange(bool a);
+	int GetRange(void);
 
 	//cost getter
-	int costgetter();
+	int GetCost(void);
 
 	void SetX(int xpos);
 	void SetY(int ypos);
