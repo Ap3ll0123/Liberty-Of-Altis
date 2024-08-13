@@ -49,7 +49,7 @@ void AlliedTroops::Movement(char direction)
 		}
 	}
 	else if (dirinput == 'D') {
-		if (GetX() == 24) {
+		if (GetX() == 50) {
 			SetX(GetX());
 			std::cout << GetX() << std::endl;
 		}
