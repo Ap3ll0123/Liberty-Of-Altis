@@ -4,7 +4,8 @@
 class AlliedTroops : public Entity
 {
 public:
-	void Movement();
+	void Movement(char direction);
 	void Attacking();
+	bool collisioncheck(Entity& other);
 };
 
