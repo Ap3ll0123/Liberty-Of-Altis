@@ -1,7 +1,15 @@
 #pragma once
 #include "Entity.h"
+
 class EnemyTroops : public Entity
 {
+private:
+	bool hasmoved;
+
+	//for Ai behavioural attacking and movement
+	void Movement();
+	void Attacking();
+	bool canAttack(Entity& other);
 
 protected:
 
@@ -12,9 +20,8 @@ public:
 	//Default 
 	EnemyTroops(void);
 
-	//for Ai behavioural attacking and movement
-	void Movement();
-	void Attacking();
-
+	void Enemyturn();
 };
+
+
 
