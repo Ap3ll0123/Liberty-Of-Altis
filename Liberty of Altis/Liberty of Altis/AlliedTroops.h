@@ -5,6 +5,6 @@ class AlliedTroops : public Entity
 {
 public:
 	void Movement();
-	void Attack();
+	void Attacking();
 };
 
