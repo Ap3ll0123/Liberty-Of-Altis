@@ -50,3 +50,13 @@ int Entity::costgetter()
 {
     return Cost;
 }
+
+void Entity::SetX(int xpos)
+{
+    PosXY.SetX(xpos);
+}
+
+void Entity::SetY(int ypos)
+{
+    PosXY.SetY(ypos);
+}
