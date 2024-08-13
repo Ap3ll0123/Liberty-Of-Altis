@@ -20,3 +20,12 @@ int main()
 		}
 	}
 }
+
+	AlliedTroops Player;
+
+	char input;
+
+	while (true) {
+		std::cin >> input;
+		Player.Movement(input);
+	}
