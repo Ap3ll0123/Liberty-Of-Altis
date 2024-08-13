@@ -2,6 +2,11 @@
 #include <windows.h>
 #include <iostream>
 
+map::map()
+{
+
+}
+
 void map::gotoxy(int x, int y) {
 	COORD srcn;
 	HANDLE userhandle = GetStdHandle(STD_OUTPUT_HANDLE);

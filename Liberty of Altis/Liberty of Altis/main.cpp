@@ -1,24 +1,20 @@
 #include <iostream>
 #include <windows.h>
-using namespace std;
-
-void gotoxy(int x, int y) {
-	COORD srcn;
-	HANDLE userhandle = GetStdHandle(STD_OUTPUT_HANDLE);
-	srcn.X = x; srcn.Y = y;
-	SetConsoleCursorPosition(userhandle, srcn);
-}
+#include "map.h"
+#include "mapmain1.h"
+#include "mapmain2.h"
+#include "mapmain3.h"
+#include "mapmain4.h"
+#include "mapmain5.h"
+#include "Position.h"
+#include "environmentalObjs.h"
 
 int main()
 {
-	for (int i = 0; i < 25; i++)
-	{
-		for (int j = 0; j < 18; j++)
-		{
-			gotoxy(i * 2, j);
-			cout << "*";
-		}
-	}
+    mapmain1 test;    // Create an instance of mapmain1
+    test.drawmap();   // Call the drawmap method
+
+    return 0;
 }
 
 	AlliedTroops Player;
