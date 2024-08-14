@@ -35,7 +35,6 @@ bool Entity::Entitycollision(Entity& other)
         //return true if collsion 
         return true;
     }
-
     //check if other is LR direction of entity 
     else if ((YEntity == YOther) && ((XEntity == XOther - 1) || (XEntity == XOther + 1))) {
         //return true if collsion 
@@ -43,6 +42,13 @@ bool Entity::Entitycollision(Entity& other)
     }
     else
         return false;
+}
+
+//set xy position
+void Entity::SetPosition(int x, int y)
+{
+    PosXY.SetX(x);
+    PosXY.SetY(y);
 }
 
 void Entity::Movement(char direction)
@@ -75,3 +81,7 @@ int Entity::GetCost(void)
     return Cost;
 }
 
+char Entity::Draw_Icon(void)
+{
+    return 'E';
+}

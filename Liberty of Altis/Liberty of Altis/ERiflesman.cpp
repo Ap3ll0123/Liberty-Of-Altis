@@ -7,3 +7,8 @@ ERiflesman::ERiflesman()
 	Range = 3;
 	Cost = 5;
 }
+
+char ERiflesman::Draw_Icon(void)
+{
+	return 'R';
+}

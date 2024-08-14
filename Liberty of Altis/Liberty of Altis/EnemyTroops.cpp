@@ -36,3 +36,5 @@ void EnemyTroops::Attacking(char direction)
 	std::cout << "Enemy Attacking";
 
 }
+
+
