@@ -14,5 +14,7 @@ public:
 	//Ai attacking
 	void Attacking(char direction) override;
 
+
+
 };
 

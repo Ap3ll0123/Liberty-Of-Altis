@@ -7,3 +7,8 @@ ARiflesman::ARiflesman()
 	Range = 3;
 	Cost = 5;
 }
+
+char ARiflesman::Draw_Icon(void)
+{
+	return 'A';
+}

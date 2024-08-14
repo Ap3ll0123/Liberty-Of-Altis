@@ -37,6 +37,9 @@ public:
 
 		//Check collision between entities 
 		virtual	bool Entitycollision(Entity& other);
+		
+		//Set position of entity 
+		void SetPosition(int x, int y);
 
 		//hpgetter
 		int GetHealth(void);
@@ -49,6 +52,10 @@ public:
 
 		//cost getter
 		int GetCost(void);
+
+		//Draw icon
+		virtual char Draw_Icon(void);
+
 
 };
 
