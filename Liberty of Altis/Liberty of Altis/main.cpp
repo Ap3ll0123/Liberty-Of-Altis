@@ -11,10 +11,13 @@
 
 int main()
 {
-    mapmain1 test;    // Create an instance of mapmain1
-    test.drawmap();   // Call the drawmap method
+	//Making a seed value for real randomness
+	srand((unsigned)time(NULL));
 
-    return 0;
+	mapmain1 test;    // Create an instance of mapmain1
+	test.drawmap();   // Call the drawmap method
+
+	return 0;
 
 	AlliedTroops Player;
 
