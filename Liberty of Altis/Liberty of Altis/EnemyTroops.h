@@ -2,7 +2,8 @@
 #include "Entity.h"
 class EnemyTroops : public Entity
 {
-
+private:
+	bool godown;
 
 public:
 	//Default 

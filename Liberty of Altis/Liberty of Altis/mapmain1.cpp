@@ -175,7 +175,7 @@ void mapmain1::map1game(void)
 	SetStartPos(*level1Allies[5], 7, 10);
 	SetStartPos(*level1Allies[6], 7, 12);
 
-	SetStartPos(*level1Enemy[0],20 ,10);
+	SetStartPos(*level1Enemy[0],20 ,1);
 
 
 
