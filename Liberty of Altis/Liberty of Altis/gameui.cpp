@@ -41,3 +41,11 @@ int gameui::getstats(int H, int a, int r, int c, int s)
 	return 0;
 }
 
+void gameui::turtorial() {
+	std::cout << "You are Johan Heisenburg, your villiage was destroyed by government forces a few weeks ago, angered and driven by revenge, you have joined the New Boers, a rebel force fighting the government\n";
+	std::cout << "you are in the jungle headquarters of the rebels, you are meeting your newly assigned commander, Major Jamal Musiala, to begin your training:\n ";
+	Sleep(1000);
+	std::cout << "Musiala: Welcome Johan, I am your commander and will be overseeing your training. I heard you are a hunter, and that your father was a commander in the Altian Military, thus you will become a captain in our militia\n";
+	Sleep(1000);
+	std::cout << "Musiala: To command your troops, use the WASD keys to move up, left, down, right.";
+}
