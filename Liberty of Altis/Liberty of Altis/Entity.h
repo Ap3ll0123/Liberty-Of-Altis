@@ -36,7 +36,7 @@ public:
 		virtual void Attacking(char direction);
 
 		//Check collision between entities 
-		bool collisioncheck(Entity& other);
+		virtual	bool Entitycollision(Entity& other);
 
 		//hpgetter
 		int GetHealth(void);

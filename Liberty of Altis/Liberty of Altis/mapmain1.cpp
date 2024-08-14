@@ -68,3 +68,68 @@ void mapmain1::drawmap()
 		}
 	}
 }
+
+//Function to start game 1
+void mapmain1::map1game(void)
+{
+	//draw out map 
+	drawmap();
+
+	///// #### NOT POLYMORHPHISM ####																																																																																			
+	//Spawn enemies 
+	EnemyTroops* level1Enemy[10];
+	//rifle man
+	for (int i = 0; i < 6; i++) {
+		level1Enemy[i] = new ERiflesman;
+	}
+	//Lmg
+	for (int i = 6; i < 8; i++) {
+		level1Enemy[i] = new EMachinegunner;
+	}
+	//Grenadier
+	for (int i = 8; i < 10; i++) {
+		level1Enemy[i] = new EGrenadier;
+	}
+
+
+	//Spawn allies 
+	AlliedTroops* level1Allies[7];
+	//rifle man 
+	for (int i = 0; i < 3; i++) {
+		level1Allies[i] = new ARiflesman;
+	}
+	//Lmg
+	for (int i = 3; i < 5; i++) {
+		level1Allies[i] = new AMachinegunner;
+	}
+	//Grenadier
+	for (int i = 5; i < 7; i++) {
+		level1Allies[i] = new AGrenadier;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//Delete backlog
+	for (int i = 0; i < 7; i++) {
+		if (level1Enemy[i] != nullptr) {
+			delete level1Enemy[i];
+		}
+		if (level1Allies[i] != nullptr) {
+			delete level1Allies[i];
+		}
+	}
+
+}

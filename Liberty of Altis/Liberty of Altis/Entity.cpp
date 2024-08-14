@@ -22,10 +22,23 @@ bool Entity::isEntityAlive(void)
 }
 
 //Check collisons
-bool Entity::collisioncheck(Entity& other)
+bool Entity::Entitycollision(Entity& other)
 {
-    // ur pos = other pos - 1
-    if (PosXY.GetX() == other.PosXY.GetX()) {
+
+    int XEntity = PosXY.GetX();
+    int YEntity = PosXY.GetY();
+    int XOther = other.PosXY.GetX();
+    int YOther = other.PosXY.GetY();
+
+    //check if other is UD direction of entity 
+    if ((XEntity == XOther) && ((YEntity == YOther - 1) || (YEntity == YOther + 1))) {
+        //return true if collsion 
+        return true;
+    }
+
+    //check if other is LR direction of entity 
+    else if ((YEntity == YOther) && ((XEntity == XOther - 1) || (XEntity == XOther + 1))) {
+        //return true if collsion 
         return true;
     }
     else

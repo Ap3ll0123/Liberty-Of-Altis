@@ -9,5 +9,8 @@ class mapmain1 :
 public :
 	mapmain1();
 	void drawmap();
+
+	void map1game(void);
+
 };
 
