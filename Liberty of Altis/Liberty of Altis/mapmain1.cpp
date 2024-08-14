@@ -12,8 +12,9 @@ void mapmain1::drawmap()
 {
 	bool objexist = false;
 	int count = 0;
-	environmentalObjs* props[48];
+	environmentalObjs* trees[48];
 
+	//random position list for trees
 	int treexpos[30] = {
 		3,  7, 18, 29, 34, 15, 49, 11,  5, 38,
 	   12, 42,  6,  0, 31,  8,  11, 19, 35, 28,
@@ -26,39 +27,46 @@ void mapmain1::drawmap()
 		7,  9,  4,  8,  3, 12,  5,  6,  0,  1
 	};
 
+
+	//trees next to the road
 	for (int i = 0; i < 9; i++)
 	{
-		props[i] = new environmentalObjs(char(176), 20, i * 4);
+		trees[i] = new environmentalObjs(char(176), 20, i * 4);
 
-		props[i + 9] = new environmentalObjs(char(176), 28, i * 4 + 1);
+		trees[i + 9] = new environmentalObjs(char(176), 28, i * 4 + 1);
 	}
 
+	//trees that are randomly placed around the map
 	for (int i = 0; i < 30; i++)
 	{
-		props[i + 18] = new environmentalObjs(char(176), treexpos[i], treeypos[i]);
+		trees[i + 18] = new environmentalObjs(char(176), treexpos[i], treeypos[i]);
 	}
 
+	//render
 	for (int i = 0; i < 50; i++)
 	{
 		for (int j = 0; j < 18; j++)
 		{
 			gotoxy(i , j);
 			objexist = false;
+			//check if a tree is in the position
 			for (int k = 0; k < 48; k++)
 			{
-				if (props[k]->getx() == i and props[k]->gety() == j)
+				if (trees[k]->getx() == i and trees[k]->gety() == j)
 				{
 					color(0x0A);
-					std::cout << props[k]->getsymbol();
+					std::cout << trees[k]->getsymbol();
 					objexist = true;
 				}
 			}
 			if (!objexist)
 			{
+				//road color
 				if (i < 27 && i > 21)
 				{
 					color(0x08);
 				}
+				//grass color
 				else 
 				{
 					color(0x02);
