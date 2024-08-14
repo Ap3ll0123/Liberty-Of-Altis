@@ -1,12 +1,29 @@
 #include "shop.h"
 
-void shop::cashearned(int Cash)
+void shop::cashearned(int MoneyGot)
 {
-	cash = Cash + cash;
+	cash = MoneyGot + cash;
 
 }
-void shop::cashlost(int Cash) {
-	cash = cash - Cash;
+int shop::cashlost(int MoneyLost) {
+	cash = cash - MoneyLost;
+	return cash;
+}
+
+void shop::purchase(std::string unittype, int priceofunit)
+{
+	std::cout << "you are purchasing " << unittype << "!\n";
+	std::cout << "it will cost " << priceofunit << " cash!\n";
+	std::cout << "how many you want to purchase?: ";
+	std::cin >> unitnum;
+	if (cash >= (priceofunit * unitnum)) {
+		std::cout << "you have " << cashlost(priceofunit * unitnum) << " cash left\n";
+		std::cout << "you have purchased " << unitnum << " " << unittype << "!\n";
+
+	}
+	else if (cash < (price * unitnum)) {
+		std::cout << "you don't have enough cash! come back when you're a little richer\n";
+	}
 }
 
 void shop::shopping()
@@ -16,178 +33,45 @@ void shop::shopping()
 		int hello;
 	
 		std::cout << "Below you can purchase needed units for your missions\n";
-		std::cout << "1. Rifleman, 2.Machinegunner, 3.Grenaider, 4. Mortarman, 5. Artillery, 6.Tank, 7.IFV\n";
-		std::cout << "please choose which unit to purchase: ";
+		std::cout << "1. Rifleman\n2. Machinegunner\n3. Grenaider\n4. Mortarman\n5. Artillery\n6. Tank\n7. IFV\n\n";
+		std::cout << "You have " << cash << " cash in your account. \n\n";
+		std::cout << "Please choose which unit to purchase: ";
 		std::cin >> unitbuy;
+
 		if (unitbuy == 1) {
-			price = 5;
-			std::cout << "you are purchasing rifleman!\n";
-			std::cout << "it will cost 5 cash!\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash << " left\n";
-				std::cout << "you have purchased " << unitnum << " rifleman!\n";
-
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
-
-			}
+			purchase("Rifleman", 5);
 		}
 
-		if (unitbuy == 2) {
-			price = 7;
-			std::cout << "you are purchasing machinegunner!\n";
-			std::cout << "it will cost" << price << "cash\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash  << " left\n";
-				std::cout << "you have purchased " << unitnum << " Machinegunners";
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
-
-			}
+		else if (unitbuy == 2) {
+			purchase("Machine Gunner", 7);
 		}
-		if (unitbuy == 3) {
-			price = 6;
-			std::cout << "you are purchasing Grenaiders!\n";
-			std::cout << "it will cost" << price << "cash\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash  << " left\n";
-				std::cout << "you have purchased " << unitnum << " Grenaiders";
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
-
-			}
+		else if (unitbuy == 3) {
+			purchase("Grenaiders", 6);
 		}
-		if (unitbuy == 4) {
-			price = 6;
-			std::cout << "you are purchasing Mortarman!\n";
-			std::cout << "it will cost" << price << "cash\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash  << " left\n";
-				std::cout << "you have purchased " << unitnum << " Mortarman";
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
-
-			}
+		else if (unitbuy == 4) {
+			purchase("Mortarman", 6);
 		}
-		if (unitbuy == 5) {
-			price = 15;
-			std::cout << "you are purchasing Artillery!\n";
-			std::cout << "it will cost" << price << "cash\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash  << " left\n";;
-				std::cout << "you have purchased " << unitnum << " Artillery";
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
-
-			}
+		else if (unitbuy == 5) {
+			purchase("Artillery", 15);
 		}
-		if (unitbuy == 6) {
-			price = 15;
-			std::cout << "you are purchasing Tank!\n";
-			std::cout << "it will cost" << price << "cash\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash  << " left\n";
-				std::cout << "you have purchased " << unitnum << " Tank";
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
-
-			}
+		else if (unitbuy == 6) {
+			purchase("Tank", 15);
 		}
-		if (unitbuy == 7) {
-			price = 10;
-			std::cout << "you are purchasing IFV\n";
-			std::cout << "it will cost" << price << "cash\n";
-			std::cout << "how many you want to purchase?: ";
-			std::cin >> unitnum;
-			if (cash >= (price * unitnum)) {
-				cash = cash - (price * unitnum);
-				std::cout << "you have " << cash  << " left\n";
-				std::cout << "you have purchased " << unitnum << " IFV";
-			}
-			else if (cash < (price * unitnum)) {
-				std::cout << "you don't have enough cash! get more then come back";
-			}
-			std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
-			std::cin >> hello;
-			if (hello == 1) {
-				shopping();
-			}
-			else if (hello == 2) {
-				allen = true;
+		else if (unitbuy == 7) {
+			purchase("IFV", 10);
+		}
+		else {
+			std::cout << "I don't sell that here, bucko.\n";
+		}
+		std::cout << "do you want to buy more stuff?:(1 is yes/2 is no) ";
+		std::cin >> hello;
+		if (hello == 1) {
+			std::cout << "\n";
+			shopping();
+		}
+		else if (hello == 2) {
+			allen = true;
 
-			}
 		}
 	;
 	}
