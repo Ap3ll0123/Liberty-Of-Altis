@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include "Entity.h"
 
 
 Entity::Entity(void)
@@ -21,14 +22,14 @@ bool Entity::isEntityAlive(void)
 
 }
 
-int Entity::GetX(void)
+void Entity::Movement(char direction)
 {
-    return PosXY.GetX();
+
 }
 
-int Entity::GetY(void)
+void Entity::Attacking(char direction)
 {
-    return PosXY.GetY();
+
 }
 
 int Entity::GetHealth(void)
@@ -51,12 +52,3 @@ int Entity::GetCost(void)
     return Cost;
 }
 
-void Entity::SetX(int xpos)
-{
-    PosXY.SetX(xpos);
-}
-
-void Entity::SetY(int ypos)
-{
-    PosXY.SetY(ypos);
-}
