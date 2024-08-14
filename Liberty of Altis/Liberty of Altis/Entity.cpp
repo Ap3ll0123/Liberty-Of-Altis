@@ -1,5 +1,4 @@
 #include "Entity.h"
-#include "Entity.h"
 
 
 Entity::Entity(void)
@@ -20,6 +19,17 @@ bool Entity::isEntityAlive(void)
     //if alive return true
     return true;
 
+}
+
+//Check collisons
+bool Entity::collisioncheck(Entity& other)
+{
+    // ur pos = other pos - 1
+    if (PosXY.GetX() == other.PosXY.GetX()) {
+        return true;
+    }
+    else
+        return false;
 }
 
 void Entity::Movement(char direction)

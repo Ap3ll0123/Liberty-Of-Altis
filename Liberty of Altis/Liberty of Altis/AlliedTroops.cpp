@@ -1,17 +1,9 @@
 #include "AlliedTroops.h"
-#include <iostream>
 
-AlliedTroops::AlliedTroops(int hp, int atk, int range, int cost)
-{
-	Health = hp;
-	Attack = atk;
-	Range = range;
-	Cost = cost;
-}
+
 
 AlliedTroops::AlliedTroops(void)
 {
-	//Pause Health
 	Health = 0;
 	Attack = 0;
 	Range = 0;
@@ -70,12 +62,3 @@ void AlliedTroops::Attacking(char direction)
 	std::cout << "Attack Alliedtroop";
 }
 
-bool AlliedTroops::collisioncheck(Entity& other)
-{
-	// ur pos = other pos - 1
-	if (PosXY.GetX() == other.PosXY.GetX()) {
-		return true;
-	}
-	else
-		return false;
-}

@@ -8,14 +8,11 @@ public:
 	//Default 
 	EnemyTroops(void);
 
-	//Override to pass into the entity constructor 
-	EnemyTroops(int hp, int atk, int range, int cost);
-
 	//for Ai behavioural attacking and movement
 	void Movement(char direction) override;
 
-	void Attacking(void) override;
+	//Ai attacking
+	void Attacking(char direction) override;
 
-	bool collisioncheck(Entity& other);
 };
 

@@ -7,9 +7,6 @@ class Entity
 
 
 protected:
-		//Composition relationship 
-		Position PosXY;
-
 		//Health, amount of health it before dying
 		int Health;
 
@@ -22,8 +19,9 @@ protected:
 		//Cost, amount of inventory space it takes up
 		int Cost;
 
-
-	public:
+public:
+		//Composition relationship 
+		Position PosXY;
 
 		//Default
 		Entity(void);
@@ -32,16 +30,13 @@ protected:
 		bool isEntityAlive(void);
 
 		//Movement function, carries out movement (pure virtual function)
-		virtual void Movement(char direction) = 0;
+		virtual void Movement(char direction);
 
 		//Attack function, carries out attack (pure virtual function)
-		virtual void Attacking(void) = 0;
+		virtual void Attacking(char direction);
 
-		//Get X position 
-		int GetX(void);
-
-		//Get Y position 
-		int GetY(void);
+		//Check collision between entities 
+		bool collisioncheck(Entity& other);
 
 		//hpgetter
 		int GetHealth(void);
@@ -55,9 +50,5 @@ protected:
 		//cost getter
 		int GetCost(void);
 
-		void SetX(int xpos);
-		void SetY(int ypos);
-
-	};
 };
 

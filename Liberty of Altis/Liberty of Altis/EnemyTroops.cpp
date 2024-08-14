@@ -1,9 +1,5 @@
 #include "EnemyTroops.h"
 
-EnemyTroops::EnemyTroops(int hp, int atk, int range, int cost) 
-{
-	//pause
-}
 
 EnemyTroops::EnemyTroops(void)
 {
@@ -15,7 +11,7 @@ void EnemyTroops::Movement(char direction)
 	std::cout << "Enemy movement";
 }
 
-void EnemyTroops::Attacking()
+void EnemyTroops::Attacking(char direction)
 {
 	std::cout << "Enemy Attacking";
 
