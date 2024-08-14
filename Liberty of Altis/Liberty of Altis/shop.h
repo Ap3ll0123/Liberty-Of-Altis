@@ -9,10 +9,10 @@ public:
 	int unitbuy;
 	int unitnum;
 	int price;
-	void cashearned(int Cash);
-	void cashlost(int Cash);
+	void cashearned(int MoneyGot);
+	int cashlost(int MoneyLost);
 	void shopping();
 	void pricing(int p);
+	void purchase(std::string unittype, int priceofunit);
 	bool allen = false;
 };
-
