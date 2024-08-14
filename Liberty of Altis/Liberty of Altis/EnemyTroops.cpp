@@ -37,4 +37,26 @@ void EnemyTroops::Attacking(char direction)
 
 }
 
+void EnemyTroops::M1Movement()
+{
+    //bool to determin current position
+    bool godown = true;
+
+    //check if is it at top or bottom
+    if (PosXY.GetY() + 1 == 50) {
+        godown = false;
+    }
+    else if (PosXY.GetY() - 1 == 0) {
+        godown = true;
+    }
+
+    //movement
+    if (godown == true) {
+        PosXY.SetY(PosXY.GetY() + 1);
+    }
+    else if (godown == false) {
+        PosXY.SetY(PosXY.GetY() - 1);
+    }
+}
+
 

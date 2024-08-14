@@ -14,7 +14,7 @@ public:
 	//Ai attacking
 	void Attacking(char direction) override;
 
-
-
+	//map 1 movement (start)
+	void M1Movement();
 };
 
