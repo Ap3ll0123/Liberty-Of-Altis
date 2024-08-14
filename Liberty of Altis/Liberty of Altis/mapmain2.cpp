@@ -64,12 +64,42 @@ void mapmain2::drawmap()
 	towers* tower[2];
 	tower[0] = new towers(15, 5, 100, char(219), 12, 3);
 	tower[1] = new towers(15, 5, 100, char(219), 12, 14);
+	
+	//border
+	color(0x0F);
+	for (int i = 4; i < 54; i++)
+	{
+		gotoxy(i, 0);
+		std::cout << char(205);
+		gotoxy(i, 19);
+		std::cout << char(205);
+	}
+	for (int i = 1; i < 19; i++)
+	{
+		gotoxy(3, i);
+		std::cout << char(186);
+		gotoxy(54, i);
+		std::cout << char(186);
+	}
+
+	//top left corner
+	gotoxy(3, 0);
+	std::cout << char(201);
+	//bottom left corner
+	gotoxy(3, 19);
+	std::cout << char(200);
+	//top right corner
+	gotoxy(54, 0);
+	std::cout << char(187);
+	//bottom right corner
+	gotoxy(54, 19);
+	std::cout << char(188);
 
 	for (int i = 0; i < 50; i++)
 	{
 		for (int j = 0; j < 18; j++)
 		{
-			gotoxy(i, j);
+			gotoxy(i + 4, j + 1);
 			objexist = false;
 
 			//vertical walls
