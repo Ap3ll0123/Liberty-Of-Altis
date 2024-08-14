@@ -17,8 +17,9 @@ public:
 	void Movement(char direction) override;
 
 	//Override, from entity
-	void Attacking(void) override;
+	void Attacking(char direction) override;
 
+	//Check if colliding 
 	bool collisioncheck(Entity& other);
 };
 

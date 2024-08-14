@@ -23,49 +23,49 @@ void AlliedTroops::Movement(char direction)
 	char dirinput = toupper(direction);
 
 	if (dirinput == 'W') {
-		if (GetY() == 0) {
-			SetY(GetY());
-			std::cout << GetY() << std::endl;
+		if (PosXY.GetX() == 0) {
+			PosXY.SetY(PosXY.GetY());
+			std::cout << PosXY.GetY() << std::endl;
 		}
 		else {
-			SetY(GetY() - 1);
-			std::cout << GetY() << std::endl;
+			PosXY.SetY(PosXY.GetY() - 1);
+			std::cout << PosXY.GetY() << std::endl;
 		}
 	}
 	else if (dirinput == 'S') {
-		if (GetY() == 17) {
-			SetY(GetY());
-			std::cout << GetY() << std::endl;
+		if (PosXY.GetY() == 17) {
+			PosXY.SetY(PosXY.GetY());
+			std::cout << PosXY.GetY() << std::endl;
 		}
 		else {
-			SetY(GetY() + 1);
-			std::cout << GetY() << std::endl;
+			PosXY.SetY(PosXY.GetY() + 1);
+			std::cout << PosXY.GetY() << std::endl;
 		}
 	}
 	else if (dirinput == 'A') {
-		if (GetX() == 0) {
-			SetX(GetX());
-			std::cout << GetX() << std::endl;
+		if (PosXY.GetX() == 0) {
+			PosXY.SetX(PosXY.GetX());
+			std::cout << PosXY.GetX() << std::endl;
 		}
 		else {
-			SetX(GetX() - 1);
-			std::cout << GetX() << std::endl;
+			PosXY.SetX(PosXY.GetX() - 1);
+			std::cout << PosXY.GetX() << std::endl;
 		}
 	}
 	else if (dirinput == 'D') {
-		if (GetX() == 50) {
-			SetX(GetX());
-			std::cout << GetX() << std::endl;
+		if (PosXY.GetX() == 50) {
+			PosXY.SetX(PosXY.GetX());
+			std::cout << PosXY.GetX() << std::endl;
 		}
 		else {
-			SetX(GetX() + 1);
-			std::cout << GetX() << std::endl;
+			PosXY.SetX(PosXY.GetX() + 1);
+			std::cout << PosXY.GetX() << std::endl;
 		}
 	}
 	std::cout << "ALlyMOve";
 }
 
-void AlliedTroops::Attacking()
+void AlliedTroops::Attacking(char direction)
 {
 	std::cout << "Attack Alliedtroop";
 }
@@ -73,7 +73,7 @@ void AlliedTroops::Attacking()
 bool AlliedTroops::collisioncheck(Entity& other)
 {
 	// ur pos = other pos - 1
-	if (GetX() == other.GetX()) {
+	if (PosXY.GetX() == other.PosXY.GetX()) {
 		return true;
 	}
 	else
