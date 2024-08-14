@@ -1,13 +1,10 @@
 #include "mapmain1.h"
-#include <iostream>
 #include "environmentalObjs.h"
-
+#include <iostream>
 
 mapmain1::mapmain1()
 {
-
 }
-
 
 //Function to start game 1
 void mapmain1::drawmap()
@@ -66,7 +63,7 @@ void mapmain1::drawmap()
 	gotoxy(3, 0);
 	std::cout << char(201);
 	//bottom left corner
-	gotoxy(3,19);
+	gotoxy(3, 19);
 	std::cout << char(200);
 	//top right corner
 	gotoxy(54, 0);
@@ -81,7 +78,7 @@ void mapmain1::drawmap()
 	{
 		for (int j = 0; j < 18; j++)
 		{
-			gotoxy(i + 4 , j + 1);
+			gotoxy(i + 4, j + 1);
 			objexist = false;
 			//check if a tree is in the position
 			for (int k = 0; k < 48; k++)
@@ -101,7 +98,7 @@ void mapmain1::drawmap()
 					color(0x08);
 				}
 				//grass color
-				else 
+				else
 				{
 					color(0x02);
 				}
@@ -111,13 +108,32 @@ void mapmain1::drawmap()
 	}
 }
 
+//Function to correcly display entity movement 
+void mapmain1::MoveEntity(Entity& entity, char input)
+{
+	gotoxy(entity.PosXY.GetX(), entity.PosXY.GetY());
+	std::cout << "X";
+	entity.Movement(input);
+	gotoxy(entity.PosXY.GetX(), entity.PosXY.GetY());
+	std::cout << entity.Draw_Icon();
+}
+
+//Sets starting position for entity 
+void mapmain1::SetStartPos(Entity& entity,int x, int y)
+{
+	gotoxy(x, y);
+	entity.SetPosition(x, y);
+	std::cout << entity.Draw_Icon();
+}
+
 //Function to start game 1
 void mapmain1::map1game(void)
 {
 	//draw out map 
 	drawmap();
 
-	///// #### NOT POLYMORHPHISM ####																																																																																			
+	///// #### NOT POLYMORHPHISM ####		
+	// instantiating objects																																																																																	
 	//Spawn enemies 
 	EnemyTroops* level1Enemy[10];
 	//rifle man
@@ -150,32 +166,55 @@ void mapmain1::map1game(void)
 	}
 
 
-
 	//testing 
+	SetStartPos(*level1Allies[0], 5, 2);
+	SetStartPos(*level1Allies[1], 5, 4);
+	SetStartPos(*level1Allies[2], 7, 4);
+	SetStartPos(*level1Allies[3], 7, 6);
+	SetStartPos(*level1Allies[4], 7, 8);
+	SetStartPos(*level1Allies[5], 7, 10);
+	SetStartPos(*level1Allies[6], 7, 12);
 
-	gotoxy(0, 4);
-	level1Enemy[0]->SetPosition(0, 4);
-	std::cout << level1Enemy[0]->Draw_Icon();
+	SetStartPos(*level1Enemy[0],20 ,10);
 
-	gotoxy(1, 3);
-	level1Allies[0]->SetPosition(1, 3);
-	std::cout << level1Allies[0]->Draw_Icon();
 
-	gotoxy(1, 8);
-	if ((level1Allies[0]->Entitycollision(*level1Enemy[0])) == true) {
-		std::cout << "works";
+
+
+	
+	//Check if all enemies have died
+	bool test = false;
+
+	
+	
+	while (test == false) {
+
+		for (int i = 0; i < 7; i++) {
+			gotoxy(65, 10);
+			std::cout << "Enter your move";
+			char input;
+			std::cin >> input;
+
+			//reflect movement of entity on screen 
+			MoveEntity(*level1Allies[i],input);
+		}
+		level1Enemy[0]->M1Movement();
+		drawmap();
+		gotoxy(level1Enemy[0]->PosXY.GetX(), level1Enemy[0]->PosXY.GetY());
+		std::cout << level1Enemy[0]->Draw_Icon();
+
+		for (int i = 0; i < 7; i++) {
+			gotoxy(level1Allies[i]->PosXY.GetX(), level1Allies[i]->PosXY.GetY());
+			std::cout << level1Allies[i]->Draw_Icon();
+		}
+
+
 	}
-	else
-		std::cout << "dont work";
 
 
 
 
 
-
-
-
-
+	
 
 
 
@@ -190,3 +229,5 @@ void mapmain1::map1game(void)
 	}
 
 }
+
+
