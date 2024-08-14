@@ -1,30 +1,20 @@
-#include <iostream>
-#include <windows.h>
 #include "map.h"
 #include "mapmain1.h"
-#include "mapmain2.h"
-#include "mapmain3.h"
-#include "mapmain4.h"
-#include "mapmain5.h"
-#include "Position.h"
-#include "environmentalObjs.h"
 
-int main()
-{
+int main(void) {
+
 	//Making a seed value for real randomness
 	srand((unsigned)time(NULL));
 
-	mapmain1 test;    // Create an instance of mapmain1
-	test.drawmap();   // Call the drawmap method
+	mapmain1 level1;
+	level1.map1game();
 
-	return 0;
 
-	AlliedTroops Player;
 
-	char input;
 
-	while (true) {
-		std::cin >> input;
-		Player.Movement(input);
-	}
+	int pause;
+	std::cin >> pause;
 }
+
+
+
