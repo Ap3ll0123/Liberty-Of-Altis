@@ -8,6 +8,8 @@ mapmain1::mapmain1()
 
 }
 
+
+//Function to start game 1
 void mapmain1::drawmap()
 {
 	bool objexist = false;
@@ -117,7 +119,22 @@ void mapmain1::map1game(void)
 
 
 
+	//testing 
 
+	gotoxy(0, 4);
+	level1Enemy[0]->SetPosition(0, 4);
+	std::cout << level1Enemy[0]->Draw_Icon();
+
+	gotoxy(1, 3);
+	level1Allies[0]->SetPosition(1, 3);
+	std::cout << level1Allies[0]->Draw_Icon();
+
+	gotoxy(1, 8);
+	if ((level1Allies[0]->Entitycollision(*level1Enemy[0])) == true) {
+		std::cout << "works";
+	}
+	else
+		std::cout << "dont work";
 
 
 
