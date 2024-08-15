@@ -1,6 +1,6 @@
 #include "Entity.h"
 
-//testing thingy 
+
 Entity::Entity(void)
 {
     Health = 0;
@@ -22,26 +22,86 @@ bool Entity::isEntityAlive(void)
 }
 
 //Check collisons
-bool Entity::Entitycollision(Entity& other)
+bool Entity::Entitycollision(Entity& other, char direction)
 {
+    direction = toupper(direction);
 
     int XEntity = PosXY.GetX();
     int YEntity = PosXY.GetY();
     int XOther = other.PosXY.GetX();
     int YOther = other.PosXY.GetY();
 
-    //check if other is UD direction of entity 
-    if ((XEntity == XOther) && ((YEntity == YOther - 1) || (YEntity == YOther + 1))) {
-        //return true if collsion 
-        return true;
+    bool result = false;
+
+    //Check if entity is exiting the borders
+    //Down 
+    if ((YEntity == YOther - 1) && direction == 'S') {
+        result = true;
     }
-    //check if other is LR direction of entity 
-    else if ((YEntity == YOther) && ((XEntity == XOther - 1) || (XEntity == XOther + 1))) {
-        //return true if collsion 
-        return true;
+    //Up
+    else if ((YEntity == YOther + 1) && direction == 'W') {
+        result = true;
+    }
+    //Right
+    else if ((XEntity == XOther - 1) && direction == 'D') {
+        result = true;
+    }
+    //Left
+    else if ((XEntity == XOther + 1) && direction == 'A') {
+        result = true;
     }
     else
-        return false;
+        result = false;
+
+    ////check if other is UD direction of entity 
+    //if ((XEntity == XOther) && ((YEntity == YOther - 1) || (YEntity == YOther + 1))) {
+    //    //return true if collsion 
+    //    result = true;
+    //}
+    ////check if other is LR direction of entity 
+    //else if ((YEntity == YOther) && ((XEntity == XOther - 1) || (XEntity == XOther + 1))) {
+    //    //return true if collsion 
+    //    result = true;
+    //}
+    //else
+    //    result = false;
+
+    return result;
+}
+
+//Check border collison
+bool Entity::BorderCollision(char direction)
+{
+    direction = toupper(direction);
+
+    int result = false;
+
+    //Up 
+    if (direction == 'W') {
+        if (PosXY.GetY() - 1 == 0) {
+            result = true;
+        }
+    }
+    //Down
+    else if (direction == 'S') {
+        if (PosXY.GetY() + 1 == 19) {
+            result = true;
+        }
+    }
+    //left
+    else if (direction == 'D') {
+        if (PosXY.GetX() + 1 == 54) {
+            result = true;
+        }
+    }
+    //right 
+    else if (direction == 'A') {
+        if (PosXY.GetX() - 1 == 3) {
+            result = true;
+        }
+    }
+
+    return result;
 }
 
 //set xy position
