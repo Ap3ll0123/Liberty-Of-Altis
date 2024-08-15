@@ -1,6 +1,6 @@
 #include "Entity.h"
 
-//testing 
+//testing thingy 
 Entity::Entity(void)
 {
     Health = 0;
